@@ -1126,7 +1126,7 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
   phaseKeys.forEach(key => {
     const src = json?.fieldingPhases?.[key] || {};
     const maxOutside = parseInt(src.maxOutside) || phaseDefaults[key].maxOutside;
-    const targetCount = Math.min(11, Math.max(1, aiPlayers.length));
+    const targetCount = Math.min(10, Math.max(1, aiPlayers.length));
     const rawFielders = Array.isArray(src.fielders) ? src.fielders : [];
     const template = getFieldingTemplate(key);
     const used = new Set();
