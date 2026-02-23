@@ -330,6 +330,16 @@ header{background:linear-gradient(90deg,#071020 0%,#0f2040 50%,#071020 100%);bor
 </div>
 
 <script>
+  // 1) Keep this as the single source of truth
+const MAX_FIELDERS = 10;
+
+// 2) In applyState(s), replace fieldPositions assignment with:
+const loadedField = Array.isArray(s.fieldPositions) ? s.fieldPositions.slice(0, MAX_FIELDERS) : [];
+fieldPositions = loadedField.length ? loadedField : fieldPositions.slice(0, MAX_FIELDERS);
+  // render bat/bowl can stay same; for field positions use 10 only
+fieldPositions = fieldPositions.slice(0, MAX_FIELDERS);
+
+// presets and reset arrays must each have exactly 10 coordinate pairs
 // ===== CONFIG =====
 const GROQ_API_KEY = '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';
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
