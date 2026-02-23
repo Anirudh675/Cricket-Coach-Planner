@@ -330,16 +330,6 @@ header{background:linear-gradient(90deg,#071020 0%,#0f2040 50%,#071020 100%);bor
 </div>
 
 <script>
-  // 1) Keep this as the single source of truth
-const MAX_FIELDERS = 10;
-
-// 2) In applyState(s), replace fieldPositions assignment with:
-const loadedField = Array.isArray(s.fieldPositions) ? s.fieldPositions.slice(0, MAX_FIELDERS) : [];
-fieldPositions = loadedField.length ? loadedField : fieldPositions.slice(0, MAX_FIELDERS);
-  // render bat/bowl can stay same; for field positions use 10 only
-fieldPositions = fieldPositions.slice(0, MAX_FIELDERS);
-
-// presets and reset arrays must each have exactly 10 coordinate pairs
 // ===== CONFIG =====
 const GROQ_API_KEY = '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';
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
@@ -386,6 +376,7 @@ let fieldPositions = [
   {id:6,x:16,y:28,playerId:null,posName:"Mid-wicket"},
   {id:7,x:84,y:28,playerId:null,posName:"Cover"},
   {id:8,x:36,y:15,playerId:null,posName:"Long-on"},
+  {id:9,x:64,y:15,playerId:null,posName:"Long-off"},
   {id:10,x:50,y:10,playerId:null,posName:"Fine Leg"}
 ];
 let dragPlayerId = null;
@@ -911,9 +902,9 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape') closePosPopup();});
 
 // ===== PRESETS =====
 const presets={
-  attack:[[50,79],[50,63],[30,50],[70,50],[22,38],[78,38],[15,25],[85,25],[35,14],[65,14]],
-  defend:[[50,79],[50,67],[38,60],[62,60],[28,52],[72,52],[20,38],[80,38],[38,24],[62,24]],
-  spin:  [[50,79],[50,65],[28,52],[72,52],[18,38],[82,38],[30,25],[70,25],[42,14],[58,14]],
+  attack:[[50,79],[50,63],[30,50],[70,50],[22,38],[78,38],[15,25],[85,25],[35,14],[65,14],[50,10]],
+  defend:[[50,79],[50,67],[38,60],[62,60],[28,52],[72,52],[20,38],[80,38],[38,24],[62,24],[50,14]],
+  spin:  [[50,79],[50,65],[28,52],[72,52],[18,38],[82,38],[30,25],[70,25],[42,14],[58,14],[50,10]],
 };
 function applyPreset(v){
   if(!presets[v]) return;
@@ -922,7 +913,7 @@ function applyPreset(v){
 }
 function resetFieldAssignments(){fieldPositions=fieldPositions.map(fp=>({...fp,playerId:null}));renderField();scheduleSave();}
 function resetAllPositions(){
-  const d=[[50,79],[50,64],[33,54],[67,54],[22,42],[78,42],[16,28],[84,28],[36,15],[64,15]];
+  const d=[[50,79],[50,64],[33,54],[67,54],[22,42],[78,42],[16,28],[84,28],[36,15],[64,15],[50,10]];
   fieldPositions=fieldPositions.map((fp,i)=>({...fp,x:d[i][0],y:d[i][1],posName:detectPosition(d[i][0],d[i][1])}));
   renderField();scheduleSave();
 }
@@ -1135,7 +1126,7 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
   phaseKeys.forEach(key => {
     const src = json?.fieldingPhases?.[key] || {};
     const maxOutside = parseInt(src.maxOutside) || phaseDefaults[key].maxOutside;
-    const targetCount = Math.min(10, Math.max(1, aiPlayers.length));
+    const targetCount = Math.min(11, Math.max(1, aiPlayers.length));
     const rawFielders = Array.isArray(src.fielders) ? src.fielders : [];
     const template = getFieldingTemplate(key);
     const used = new Set();
