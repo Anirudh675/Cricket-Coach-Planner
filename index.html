@@ -210,61 +210,38 @@ header{background:linear-gradient(90deg,#071020 0%,#0f2040 50%,#071020 100%);bor
         <!-- Crease lines -->
         <line x1="218" y1="200" x2="282" y2="200" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
         <line x1="218" y1="300" x2="282" y2="300" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-        <!-- Stumps top -->
+        <!-- Stumps top (bowler's end) -->
         <rect x="241" y="182" width="3" height="15" fill="#e0c070"/><rect x="248" y="182" width="3" height="15" fill="#e0c070"/><rect x="255" y="182" width="3" height="15" fill="#e0c070"/>
-        <!-- Stumps bottom -->
+        <!-- Stumps bottom (batting end — WK stands behind these at top) -->
         <rect x="241" y="303" width="3" height="15" fill="#e0c070"/><rect x="248" y="303" width="3" height="15" fill="#e0c070"/><rect x="255" y="303" width="3" height="15" fill="#e0c070"/>
+        <!-- Pitch end labels -->
+        <text x="250" y="174" text-anchor="middle" fill="#ffffff38" font-size="7.5" font-family="sans-serif">BOWLER ↓</text>
+        <text x="250" y="332" text-anchor="middle" fill="#ffffff38" font-size="7.5" font-family="sans-serif">↑ BATTER</text>
         <!-- Boundary -->
         <ellipse cx="250" cy="250" rx="238" ry="238" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.2" stroke-dasharray="10,6"/>
 
-        <!-- OFF SIDE label (right) -->
-        <text x="460" y="254" text-anchor="middle" fill="#ffffff50" font-size="9" font-family="sans-serif" transform="rotate(90,460,254)">◀── Off Side</text>
-        <!-- LEG SIDE label (left) -->
-        <text x="40" y="254" text-anchor="middle" fill="#ffffff50" font-size="9" font-family="sans-serif" transform="rotate(-90,40,254)">Leg Side ──▶</text>
+        <!-- Side labels -->
+        <text x="466" y="258" text-anchor="middle" fill="#ffffff45" font-size="9" font-family="sans-serif" transform="rotate(90,466,258)">◀── Off Side</text>
+        <text x="34" y="258" text-anchor="middle" fill="#ffffff45" font-size="9" font-family="sans-serif" transform="rotate(-90,34,258)">Leg Side ──▶</text>
 
-        <!-- BOUNDARY POSITION LABELS (outer ring) — matching reference diagram -->
-        <!-- Top centre: Deep Fine Leg (leg side) -->
-        <text x="295" y="22" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Fine Leg</text>
-        <!-- Top left: Fine Leg -->
-        <text x="160" y="22" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Fine Leg</text>
-        <!-- Top right: Third Man -->
-        <text x="390" y="50" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Third Man</text>
-        <!-- Right: Deep Point -->
-        <text x="468" y="195" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Point</text>
-        <!-- Right mid: OutField -->
-        <text x="462" y="260" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">OutField</text>
-        <!-- Right lower: Deep Extra Cover -->
-        <text x="452" y="340" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Extra Cover</text>
-        <!-- Bottom right: Long Off -->
-        <text x="370" y="478" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Long Off</text>
-        <!-- Bottom centre: Long On -->
-        <text x="240" y="490" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Long On</text>
-        <!-- Bottom left: Deep Mid Wicket -->
-        <text x="100" y="478" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Mid Wicket</text>
-        <!-- Left lower: Deep Square -->
-        <text x="30" y="340" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Square</text>
-        <!-- Left mid: Square Leg boundary -->
-        <text x="18" y="260" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Sq. Leg</text>
-
-        <!-- INNER CIRCLE POSITION LABELS -->
-        <!-- WK area -->
-        <text x="290" y="78" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Slips</text>
-        <text x="270" y="92" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Gully</text>
-        <text x="250" y="82" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">WK</text>
-        <text x="218" y="92" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Leg Slips</text>
-        <!-- Square positions -->
-        <text x="400" y="200" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Point</text>
-        <text x="110" y="200" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Square Leg</text>
-        <!-- Cover region -->
-        <text x="385" y="270" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Cover Point</text>
-        <text x="370" y="295" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Cover</text>
-        <text x="355" y="320" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Extra Cover</text>
-        <!-- Leg side inner -->
-        <text x="130" y="295" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid Wicket</text>
-        <text x="138" y="320" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">InField</text>
+        <!-- INNER POSITION LABELS — no boundary labels per design -->
+        <!-- WK / slip area (top) -->
+        <text x="250" y="76" text-anchor="middle" fill="#ffffff30" font-size="8" font-family="sans-serif">WK</text>
+        <text x="295" y="80" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Slips</text>
+        <text x="210" y="86" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Leg Slips</text>
+        <text x="342" y="114" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Gully</text>
+        <!-- Off side ring -->
+        <text x="388" y="178" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Point</text>
+        <text x="376" y="226" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Cover Point</text>
+        <text x="360" y="272" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Cover</text>
+        <text x="346" y="316" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Extra Cover</text>
         <!-- Straight -->
-        <text x="315" y="420" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid Off</text>
-        <text x="185" y="420" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid On</text>
+        <text x="308" y="390" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Mid Off</text>
+        <text x="192" y="390" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Mid On</text>
+        <!-- Leg side ring -->
+        <text x="156" y="316" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">InField</text>
+        <text x="142" y="268" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Mid Wicket</text>
+        <text x="126" y="196" text-anchor="middle" fill="#ffffff22" font-size="7.5" font-family="sans-serif">Square Leg</text>
       </svg>
       <div id="fieldTokens"></div>
       <div class="pos-edit-popup" id="posPopup">
@@ -415,17 +392,19 @@ let vcId = null;
 let battingOrder = new Array(11).fill(null);
 let bowlingSlots = Array.from({length:5}, () => ({playerId:null, overs:4}));
 let fieldPositions = [
-  {id:0,x:50,y:79,playerId:null,posName:"Wicket-keeper"},
-  {id:1,x:50,y:64,playerId:null,posName:"Mid On"},
-  {id:2,x:33,y:54,playerId:null,posName:"Square Leg"},
-  {id:3,x:67,y:54,playerId:null,posName:"Cover Point"},
-  {id:4,x:22,y:42,playerId:null,posName:"Mid Wicket"},
-  {id:5,x:78,y:42,playerId:null,posName:"Cover"},
-  {id:6,x:16,y:28,playerId:null,posName:"Deep Mid Wicket"},
-  {id:7,x:84,y:28,playerId:null,posName:"Extra Cover"},
-  {id:8,x:36,y:15,playerId:null,posName:"Long On"},
-  {id:9,x:64,y:15,playerId:null,posName:"Long Off"},
-  {id:10,x:50,y:10,playerId:null,posName:"Deep Fine Leg"}
+  // WK at top-centre behind batting stumps; batter is below (y~65), bowler at top (y~35)
+  // Off side = right (cx+), Leg side = left (cx-)
+  {id:0,  x:50, y:22, playerId:null, posName:"Wicket-keeper"},
+  {id:1,  x:61, y:20, playerId:null, posName:"First Slip"},
+  {id:2,  x:73, y:30, playerId:null, posName:"Gully"},
+  {id:3,  x:79, y:44, playerId:null, posName:"Point"},
+  {id:4,  x:75, y:57, playerId:null, posName:"Cover Point"},
+  {id:5,  x:68, y:67, playerId:null, posName:"Cover"},
+  {id:6,  x:60, y:78, playerId:null, posName:"Mid Off"},
+  {id:7,  x:40, y:78, playerId:null, posName:"Mid On"},
+  {id:8,  x:28, y:67, playerId:null, posName:"Mid Wicket"},
+  {id:9,  x:22, y:50, playerId:null, posName:"Square Leg"},
+  {id:10, x:37, y:22, playerId:null, posName:"Fine Leg"}
 ];
 let dragPlayerId = null;
 let saveTimer = null;
@@ -442,95 +421,75 @@ function playerById(id){return players.find(p=>p.id===id);}
 function shortName(n){const p=n.split(' ');return p.length===1?p[0].slice(0,7):p[0][0]+'. '+p[p.length-1].slice(0,7);}
 
 // ===== AUTO POSITION NAME =====
-// Coordinate system: x=0 is left (leg side), x=100 is right (off side)
-// cx = x - 50 (positive = off side, negative = leg side)
-// y=0 is top (straight/fine leg end), y=100 is bottom (long on/long off end)
-// Batter faces downward (bottom of screen), bowler at top
+// Coordinate system:
+//   x=0 LEFT = LEG SIDE,  x=100 RIGHT = OFF SIDE
+//   y=0 TOP = WK/slip end (behind batting stumps),  y=100 BOTTOM = long on/off
+//   Batter faces upward toward bowler. WK behind batter at top (y~22).
 function detectPosition(x, y) {
-  const cx = x - 50; // positive = off side, negative = leg side
-  const cy = y - 50; // positive = below centre (long on/off end), negative = above centre (fine leg end)
-  const dist = Math.sqrt(cx*cx + cy*cy);
+  const cx = x - 50; // + = off side (right), - = leg side (left)
+  const dist = Math.sqrt(cx*cx + (y-50)*(y-50));
 
-  // ── WICKET-KEEPER / SLIP CORDON (directly behind stumps, top area, close in) ──
-  if (y < 30 && dist < 22) {
-    if (Math.abs(cx) < 4)  return "Wicket-keeper";
-    if (cx > 4  && cx < 12) return "First Slip";
-    if (cx > 12 && cx < 22) return "Second Slip";
-    if (cx > 22)             return "Third Slip";
-    if (cx < -4  && cx > -12) return "Leg Slip";
-    if (cx < -12)             return "Leg Gully";
+  // WK / SLIP CORDON — top area, y < 33
+  if (y < 33) {
+    if (Math.abs(cx) < 6)        return "Wicket-keeper";
+    if (cx > 6  && cx <= 15)     return "First Slip";
+    if (cx > 15 && cx <= 25)     return "Second Slip";
+    if (cx > 25)                 return "Third Slip";
+    if (cx < -6  && cx >= -15)   return "Leg Slip";
+    if (cx < -15)                return "Leg Gully";
   }
 
-  // ── GULLY (off side, close, upper half) ──
-  if (y < 38 && cx > 16 && cx < 30 && dist < 28) return "Gully";
+  // GULLY — off side, upper quadrant y 30–44, wide of slip
+  if (y >= 28 && y < 44 && cx > 18 && cx < 36) return "Gully";
 
-  // ── SILLY / SHORT positions (very close to bat, inner 15 units) ──
-  if (dist < 15) {
-    if (cx > 4)  return "Silly Mid Off";
-    if (cx < -4) return "Silly Mid On";
+  // SILLY MID positions — very close to batter
+  if (dist < 14) {
+    if (cx > 3)  return "Silly Mid Off";
+    if (cx < -3) return "Silly Mid On";
     return "Short Pitch";
   }
 
-  // ── INNER RING (30-yard circle equivalent, dist 15–35) ──
-  if (dist < 35) {
-    // Top half (y < 50 — towards fine leg / slip end)
+  // INNER RING — 30-yard circle (dist 14–38)
+  if (dist < 38) {
     if (y < 50) {
-      if (cx > 22)  return "Point";
-      if (cx > 8)   return "Cover Point";
-      if (cx < -22) return "Square Leg";
-      if (cx < -8)  return "InField";
-      if (Math.abs(cx) <= 8) return "Short Fine Leg";
-    }
-    // Bottom half (y > 50 — towards long on/off end)
-    if (y >= 50) {
-      if (cx > 22)  return "Extra Cover";
-      if (cx > 8)   return "Cover";
-      if (cx < -22) return "Mid Wicket";
-      if (cx < -8)  return "InField";
-      if (Math.abs(cx) <= 8 && cy > 0) return "Mid On";
-    }
-    // Near straight (mid off / mid on)
-    if (Math.abs(cx) <= 8) {
+      // Upper half: WK-to-batter zone
+      if (cx > 24)       return "Point";
+      if (cx > 10)       return "Cover Point";
+      if (cx < -24)      return "Square Leg";
+      if (cx < -10)      return "InField";
+      return cx >= 0 ? "Cover Point" : "Square Leg";
+    } else {
+      // Lower half: batter-facing outfield side
+      if (cx > 24)       return "Extra Cover";
+      if (cx > 10)       return "Cover";
+      if (cx < -24)      return "Mid Wicket";
+      if (cx < -10)      return "InField";
       return cx >= 0 ? "Mid Off" : "Mid On";
     }
-    return cx > 0 ? "Cover" : "Mid Wicket";
   }
 
-  // ── OUTFIELD (dist >= 35) ──
-  // Fine Leg / Deep Fine Leg (top, leg side)
-  if (y < 20 && cx < -5)  return "Fine Leg";
-  if (y < 20 && cx >= -5 && cx <= 5) return "Deep Fine Leg";
-
-  // Third Man (top, off side)
-  if (y < 25 && cx > 5)   return "Third Man";
-
-  // Deep Point (right side, upper half)
-  if (cx > 30 && y < 45)  return "Deep Point";
-
-  // OutField / Deep Cover (right side, middle)
-  if (cx > 30 && y >= 45 && y < 60) return "OutField";
-
-  // Deep Extra Cover (right side, lower half)
-  if (cx > 22 && y >= 60 && y < 75) return "Deep Extra Cover";
-
-  // Long Off (bottom right)
-  if (y >= 75 && cx > 8)  return "Long Off";
-
-  // Long On (bottom, slightly leg side or centre)
-  if (y >= 75 && cx <= 8 && cx > -8) return "Long On";
-  if (y >= 75 && cx <= -8) return "Long On";
-
-  // Deep Mid Wicket (left side, lower half)
-  if (cx < -22 && y >= 60) return "Deep Mid Wicket";
-
-  // Deep Square / Deep Square Leg (left side, middle)
-  if (cx < -30 && y >= 45 && y < 60) return "Deep Square";
-
-  // Square Leg boundary (left side, upper half)
-  if (cx < -30 && y < 45)  return "Deep Square Leg";
-
-  // Fallback
-  return cx > 0 ? "OutField" : "Deep Mid Wicket";
+  // OUTFIELD — dist >= 38
+  // Top (behind WK): fine leg / third man
+  if (y < 28) {
+    return cx < 0 ? "Fine Leg" : "Third Man";
+  }
+  // Off side outfield (right)
+  if (cx > 28) {
+    if (y < 45) return "Deep Point";
+    if (y < 62) return "OutField";
+    return "Deep Extra Cover";
+  }
+  // Leg side outfield (left)
+  if (cx < -28) {
+    if (y < 45) return "Deep Square Leg";
+    if (y < 62) return "Deep Square";
+    return "Deep Mid Wicket";
+  }
+  // Bottom: long on / long off
+  if (y >= 74) {
+    return cx >= 0 ? "Long Off" : "Long On";
+  }
+  return cx >= 0 ? "Cover" : "Mid Wicket";
 }
 
 // ===== CLOUD SAVE / LOAD =====
@@ -986,9 +945,9 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape') closePosPopup();});
 
 // ===== PRESETS =====
 const presets={
-  attack:[[50,79],[50,63],[30,50],[70,50],[22,38],[78,38],[15,25],[85,25],[35,14],[65,14],[50,10]],
-  defend:[[50,79],[50,67],[38,60],[62,60],[28,52],[72,52],[20,38],[80,38],[38,24],[62,24],[50,14]],
-  spin:  [[50,79],[50,65],[28,52],[72,52],[18,38],[82,38],[30,25],[70,25],[42,14],[58,14],[50,10]],
+  attack:[[50,22],[61,20],[73,30],[79,44],[75,57],[68,67],[60,78],[40,78],[28,67],[22,50],[37,22]],
+  defend:[[50,22],[61,20],[80,42],[82,55],[72,68],[62,78],[55,84],[45,84],[33,72],[18,52],[37,22]],
+  spin:  [[50,22],[63,20],[75,28],[80,42],[73,55],[62,67],[56,78],[44,78],[30,67],[20,48],[36,22]],
 };
 function applyPreset(v){
   if(!presets[v]) return;
@@ -997,7 +956,7 @@ function applyPreset(v){
 }
 function resetFieldAssignments(){fieldPositions=fieldPositions.map(fp=>({...fp,playerId:null}));renderField();scheduleSave();}
 function resetAllPositions(){
-  const d=[[50,79],[50,64],[33,54],[67,54],[22,42],[78,42],[16,28],[84,28],[36,15],[64,15],[50,10]];
+  const d=[[50,22],[61,20],[73,30],[79,44],[75,57],[68,67],[60,78],[40,78],[28,67],[22,50],[37,22]];
   fieldPositions=fieldPositions.map((fp,i)=>({...fp,x:d[i][0],y:d[i][1],posName:detectPosition(d[i][0],d[i][1])}));
   renderField();scheduleSave();
 }
