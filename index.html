@@ -201,22 +201,70 @@ header{background:linear-gradient(90deg,#071020 0%,#0f2040 50%,#071020 100%);bor
 
     <div class="field-wrap" id="fieldWrap">
       <svg class="field-svg" viewBox="0 0 500 500">
+        <!-- Outfield -->
         <ellipse cx="250" cy="250" rx="240" ry="240" fill="#1a5c2a"/>
+        <!-- 30-yard circle -->
         <ellipse cx="250" cy="250" rx="160" ry="160" fill="#1e6830" stroke="#2d8c42" stroke-width="1.5" stroke-dasharray="6,4"/>
+        <!-- Pitch -->
         <rect x="228" y="155" width="44" height="190" rx="4" fill="#c8a850" opacity="0.6"/>
+        <!-- Crease lines -->
         <line x1="218" y1="200" x2="282" y2="200" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
         <line x1="218" y1="300" x2="282" y2="300" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+        <!-- Stumps top -->
         <rect x="241" y="182" width="3" height="15" fill="#e0c070"/><rect x="248" y="182" width="3" height="15" fill="#e0c070"/><rect x="255" y="182" width="3" height="15" fill="#e0c070"/>
+        <!-- Stumps bottom -->
         <rect x="241" y="303" width="3" height="15" fill="#e0c070"/><rect x="248" y="303" width="3" height="15" fill="#e0c070"/><rect x="255" y="303" width="3" height="15" fill="#e0c070"/>
+        <!-- Boundary -->
         <ellipse cx="250" cy="250" rx="238" ry="238" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.2" stroke-dasharray="10,6"/>
-        <text x="250" y="66" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Fine Leg</text>
-        <text x="445" y="145" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Third Man</text>
-        <text x="452" y="260" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Point</text>
-        <text x="445" y="385" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Cover</text>
-        <text x="250" y="472" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Long On</text>
-        <text x="55" y="385" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Mid-Wicket</text>
-        <text x="42" y="260" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Sq. Leg</text>
-        <text x="55" y="145" text-anchor="middle" fill="#ffffff35" font-size="9.5" font-family="sans-serif">Fine Leg</text>
+
+        <!-- OFF SIDE label (right) -->
+        <text x="460" y="254" text-anchor="middle" fill="#ffffff50" font-size="9" font-family="sans-serif" transform="rotate(90,460,254)">◀── Off Side</text>
+        <!-- LEG SIDE label (left) -->
+        <text x="40" y="254" text-anchor="middle" fill="#ffffff50" font-size="9" font-family="sans-serif" transform="rotate(-90,40,254)">Leg Side ──▶</text>
+
+        <!-- BOUNDARY POSITION LABELS (outer ring) — matching reference diagram -->
+        <!-- Top centre: Deep Fine Leg (leg side) -->
+        <text x="295" y="22" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Fine Leg</text>
+        <!-- Top left: Fine Leg -->
+        <text x="160" y="22" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Fine Leg</text>
+        <!-- Top right: Third Man -->
+        <text x="390" y="50" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Third Man</text>
+        <!-- Right: Deep Point -->
+        <text x="468" y="195" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Point</text>
+        <!-- Right mid: OutField -->
+        <text x="462" y="260" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">OutField</text>
+        <!-- Right lower: Deep Extra Cover -->
+        <text x="452" y="340" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Extra Cover</text>
+        <!-- Bottom right: Long Off -->
+        <text x="370" y="478" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Long Off</text>
+        <!-- Bottom centre: Long On -->
+        <text x="240" y="490" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Long On</text>
+        <!-- Bottom left: Deep Mid Wicket -->
+        <text x="100" y="478" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Mid Wicket</text>
+        <!-- Left lower: Deep Square -->
+        <text x="30" y="340" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Square</text>
+        <!-- Left mid: Square Leg boundary -->
+        <text x="18" y="260" text-anchor="middle" fill="#ffffff35" font-size="9" font-family="sans-serif">Deep Sq. Leg</text>
+
+        <!-- INNER CIRCLE POSITION LABELS -->
+        <!-- WK area -->
+        <text x="290" y="78" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Slips</text>
+        <text x="270" y="92" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Gully</text>
+        <text x="250" y="82" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">WK</text>
+        <text x="218" y="92" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Leg Slips</text>
+        <!-- Square positions -->
+        <text x="400" y="200" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Point</text>
+        <text x="110" y="200" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Square Leg</text>
+        <!-- Cover region -->
+        <text x="385" y="270" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Cover Point</text>
+        <text x="370" y="295" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Cover</text>
+        <text x="355" y="320" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Extra Cover</text>
+        <!-- Leg side inner -->
+        <text x="130" y="295" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid Wicket</text>
+        <text x="138" y="320" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">InField</text>
+        <!-- Straight -->
+        <text x="315" y="420" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid Off</text>
+        <text x="185" y="420" text-anchor="middle" fill="#ffffff28" font-size="8.5" font-family="sans-serif">Mid On</text>
       </svg>
       <div id="fieldTokens"></div>
       <div class="pos-edit-popup" id="posPopup">
@@ -368,16 +416,16 @@ let battingOrder = new Array(11).fill(null);
 let bowlingSlots = Array.from({length:5}, () => ({playerId:null, overs:4}));
 let fieldPositions = [
   {id:0,x:50,y:79,playerId:null,posName:"Wicket-keeper"},
-  {id:1,x:50,y:64,playerId:null,posName:"Mid-on"},
-  {id:2,x:33,y:54,playerId:null,posName:"Backward Square"},
+  {id:1,x:50,y:64,playerId:null,posName:"Mid On"},
+  {id:2,x:33,y:54,playerId:null,posName:"Square Leg"},
   {id:3,x:67,y:54,playerId:null,posName:"Cover Point"},
-  {id:4,x:22,y:42,playerId:null,posName:"Square Leg"},
-  {id:5,x:78,y:42,playerId:null,posName:"Extra Cover"},
-  {id:6,x:16,y:28,playerId:null,posName:"Mid-wicket"},
-  {id:7,x:84,y:28,playerId:null,posName:"Cover"},
-  {id:8,x:36,y:15,playerId:null,posName:"Long-on"},
-  {id:9,x:64,y:15,playerId:null,posName:"Long-off"},
-  {id:10,x:50,y:10,playerId:null,posName:"Fine Leg"}
+  {id:4,x:22,y:42,playerId:null,posName:"Mid Wicket"},
+  {id:5,x:78,y:42,playerId:null,posName:"Cover"},
+  {id:6,x:16,y:28,playerId:null,posName:"Deep Mid Wicket"},
+  {id:7,x:84,y:28,playerId:null,posName:"Extra Cover"},
+  {id:8,x:36,y:15,playerId:null,posName:"Long On"},
+  {id:9,x:64,y:15,playerId:null,posName:"Long Off"},
+  {id:10,x:50,y:10,playerId:null,posName:"Deep Fine Leg"}
 ];
 let dragPlayerId = null;
 let saveTimer = null;
@@ -394,54 +442,95 @@ function playerById(id){return players.find(p=>p.id===id);}
 function shortName(n){const p=n.split(' ');return p.length===1?p[0].slice(0,7):p[0][0]+'. '+p[p.length-1].slice(0,7);}
 
 // ===== AUTO POSITION NAME =====
+// Coordinate system: x=0 is left (leg side), x=100 is right (off side)
+// cx = x - 50 (positive = off side, negative = leg side)
+// y=0 is top (straight/fine leg end), y=100 is bottom (long on/long off end)
+// Batter faces downward (bottom of screen), bowler at top
 function detectPosition(x, y) {
-  const cx = x - 50;
-  const dist = Math.sqrt(cx*cx + (y-50)*(y-50));
-  if (y > 72) {
-    if (Math.abs(cx) < 5) return "Wicket-keeper";
-    if (cx < -6) return "First Slip";
-    if (cx < -14) return "Second Slip";
-    if (cx > 6) return "Leg Slip";
-    return "Slip";
+  const cx = x - 50; // positive = off side, negative = leg side
+  const cy = y - 50; // positive = below centre (long on/off end), negative = above centre (fine leg end)
+  const dist = Math.sqrt(cx*cx + cy*cy);
+
+  // ── WICKET-KEEPER / SLIP CORDON (directly behind stumps, top area, close in) ──
+  if (y < 30 && dist < 22) {
+    if (Math.abs(cx) < 4)  return "Wicket-keeper";
+    if (cx > 4  && cx < 12) return "First Slip";
+    if (cx > 12 && cx < 22) return "Second Slip";
+    if (cx > 22)             return "Third Slip";
+    if (cx < -4  && cx > -12) return "Leg Slip";
+    if (cx < -12)             return "Leg Gully";
   }
-  if (y > 60 && y <= 72) {
-    if (cx < -5) return "Gully";
-    if (cx > 5) return "Leg Gully";
+
+  // ── GULLY (off side, close, upper half) ──
+  if (y < 38 && cx > 16 && cx < 30 && dist < 28) return "Gully";
+
+  // ── SILLY / SHORT positions (very close to bat, inner 15 units) ──
+  if (dist < 15) {
+    if (cx > 4)  return "Silly Mid Off";
+    if (cx < -4) return "Silly Mid On";
     return "Short Pitch";
   }
-  if (dist < 20) {
-    if (y > 54 && Math.abs(cx) < 10) return "Silly Mid-on";
-    if (y < 46 && Math.abs(cx) < 10) return "Silly Mid-off";
-    if (cx < -8) return "Short Cover";
-    if (cx > 8) return "Short Leg";
-    return "Close In";
+
+  // ── INNER RING (30-yard circle equivalent, dist 15–35) ──
+  if (dist < 35) {
+    // Top half (y < 50 — towards fine leg / slip end)
+    if (y < 50) {
+      if (cx > 22)  return "Point";
+      if (cx > 8)   return "Cover Point";
+      if (cx < -22) return "Square Leg";
+      if (cx < -8)  return "InField";
+      if (Math.abs(cx) <= 8) return "Short Fine Leg";
+    }
+    // Bottom half (y > 50 — towards long on/off end)
+    if (y >= 50) {
+      if (cx > 22)  return "Extra Cover";
+      if (cx > 8)   return "Cover";
+      if (cx < -22) return "Mid Wicket";
+      if (cx < -8)  return "InField";
+      if (Math.abs(cx) <= 8 && cy > 0) return "Mid On";
+    }
+    // Near straight (mid off / mid on)
+    if (Math.abs(cx) <= 8) {
+      return cx >= 0 ? "Mid Off" : "Mid On";
+    }
+    return cx > 0 ? "Cover" : "Mid Wicket";
   }
-  if (dist < 33) {
-    if (Math.abs(cx) < 10 && y > 50) return "Mid-on";
-    if (Math.abs(cx) < 10 && y <= 50) return "Mid-off";
-    if (cx < -15) return "Cover Point";
-    if (cx > 15) return "Mid-wicket";
-    if (cx < 0) return "Cover";
-    return "Mid-wicket";
-  }
-  // Outfield
-  if (y < 18) {
-    if (cx < -8) return "Deep Fine Leg";
-    if (cx > 8) return "Long-off";
-    return "Straight Long";
-  }
-  if (y < 32) {
-    if (cx < -22) return "Third Man";
-    if (cx > 22) return "Long-on";
-    if (cx < -8) return "Deep Cover";
-    if (cx > 8) return "Deep Mid-wicket";
-    return "Long-on";
-  }
-  if (cx < -22) return "Point";
-  if (cx > 22) return "Square Leg";
-  if (cx < -8) return "Deep Cover";
-  if (cx > 8) return "Deep Mid-wicket";
-  return "Mid-off";
+
+  // ── OUTFIELD (dist >= 35) ──
+  // Fine Leg / Deep Fine Leg (top, leg side)
+  if (y < 20 && cx < -5)  return "Fine Leg";
+  if (y < 20 && cx >= -5 && cx <= 5) return "Deep Fine Leg";
+
+  // Third Man (top, off side)
+  if (y < 25 && cx > 5)   return "Third Man";
+
+  // Deep Point (right side, upper half)
+  if (cx > 30 && y < 45)  return "Deep Point";
+
+  // OutField / Deep Cover (right side, middle)
+  if (cx > 30 && y >= 45 && y < 60) return "OutField";
+
+  // Deep Extra Cover (right side, lower half)
+  if (cx > 22 && y >= 60 && y < 75) return "Deep Extra Cover";
+
+  // Long Off (bottom right)
+  if (y >= 75 && cx > 8)  return "Long Off";
+
+  // Long On (bottom, slightly leg side or centre)
+  if (y >= 75 && cx <= 8 && cx > -8) return "Long On";
+  if (y >= 75 && cx <= -8) return "Long On";
+
+  // Deep Mid Wicket (left side, lower half)
+  if (cx < -22 && y >= 60) return "Deep Mid Wicket";
+
+  // Deep Square / Deep Square Leg (left side, middle)
+  if (cx < -30 && y >= 45 && y < 60) return "Deep Square";
+
+  // Square Leg boundary (left side, upper half)
+  if (cx < -30 && y < 45)  return "Deep Square Leg";
+
+  // Fallback
+  return cx > 0 ? "OutField" : "Deep Mid Wicket";
 }
 
 // ===== CLOUD SAVE / LOAD =====
@@ -756,9 +845,7 @@ async function generateOverPlanAI() {
   const total = parseInt(document.getElementById('totalOvers').value)||20;
   const el = document.getElementById('overPlan');
 
-  // If AI suggestions exist, use them for the over plan
   if (lastAIJson && lastAIJson.bowlingRotation && lastAIJson.bowlingRotation.length) {
-    // Convert AI bowling rotation to slots format
     const aiSlots = lastAIJson.bowlingRotation.map(b => {
       const p = players.find(pl=>pl.name===b.name);
       return { playerId: p?p.id:null, overs: b.overs||4 };
@@ -767,7 +854,6 @@ async function generateOverPlanAI() {
     if (aiSlots.length) {
       const plan = buildOverPlanFromSlots(total, aiSlots);
       if (plan) {
-        // Show AI source badge
         el.innerHTML = `<div style="background:rgba(124,58,237,.12);border:1px solid rgba(167,139,250,.25);border-radius:4px;padding:5px 8px;margin-bottom:6px;font-size:10px;color:#a78bfa">✨ Generated from AI bowling suggestions</div>`;
         const wrapper = document.createElement('div');
         el.appendChild(wrapper);
@@ -788,7 +874,6 @@ async function generateOverPlanAI() {
     }
   }
 
-  // No AI data — fall back to manual bowling slots
   const active = bowlingSlots.filter(s=>s.playerId);
   if (!active.length) {
     el.innerHTML=`<div class="info-box">No bowlers assigned. Either run <strong>AI Suggestions</strong> from the 🤖 AI tab, or drag bowlers into the Bowling Rotation above.</div>`;
@@ -866,7 +951,6 @@ function makeFieldDraggable(el, idx) {
       fieldPositions[idx].y=ny;
       el.style.left=nx+'%';
       el.style.top=ny+'%';
-      // Live update position name
       const name=detectPosition(nx,ny);
       fieldPositions[idx].posName=name;
       const posEl=el.querySelector('.tok-pos');
@@ -960,11 +1044,8 @@ function exportPlan(){
 // ===== GROQ AI =====
 function safeParseJSON(raw) {
   let s = raw.trim();
-  // Remove markdown fences: ```json ... ``` or ``` ... ```
   s = s.replace(/^```[a-zA-Z]*\s*/m, '').replace(/\s*```\s*$/m, '').trim();
-  // Remove any remaining leading backticks
   s = s.replace(/^`+/, '').replace(/`+$/, '').trim();
-  // Extract the JSON object/array (from first { or [ to last } or ])
   const firstBrace = s.indexOf('{');
   const firstBracket = s.indexOf('[');
   let start = -1;
@@ -988,20 +1069,13 @@ function toValidSquadName(name, validMap) {
 function countInvalidAINameEntries(json, validMap) {
   let count = 0;
   const isInvalid = (name) => !toValidSquadName(name, validMap);
-
-  if (Array.isArray(json?.battingOrder)) {
-    json.battingOrder.forEach(b => { if (isInvalid(b?.name)) count++; });
-  }
-  if (Array.isArray(json?.bowlingRotation)) {
-    json.bowlingRotation.forEach(b => { if (isInvalid(b?.name)) count++; });
-  }
+  if (Array.isArray(json?.battingOrder)) json.battingOrder.forEach(b => { if (isInvalid(b?.name)) count++; });
+  if (Array.isArray(json?.bowlingRotation)) json.bowlingRotation.forEach(b => { if (isInvalid(b?.name)) count++; });
   const phases = json?.fieldingPhases;
   if (phases) {
     ['powerplay', 'middleOvers', 'deathOvers'].forEach(k => {
       const fielders = phases[k]?.fielders;
-      if (Array.isArray(fielders)) {
-        fielders.forEach(f => { if (isInvalid(f?.name)) count++; });
-      }
+      if (Array.isArray(fielders)) fielders.forEach(f => { if (isInvalid(f?.name)) count++; });
     });
   }
   return count;
@@ -1014,9 +1088,9 @@ function getFieldingTemplate(phaseKey) {
       { position: 'First Slip', zone: 'inside' },
       { position: 'Second Slip', zone: 'inside' },
       { position: 'Point', zone: 'inside' },
-      { position: 'Cover', zone: 'inside' },
-      { position: 'Mid-off', zone: 'inside' },
-      { position: 'Mid-on', zone: 'inside' },
+      { position: 'Cover Point', zone: 'inside' },
+      { position: 'Mid Off', zone: 'inside' },
+      { position: 'Mid On', zone: 'inside' },
       { position: 'Square Leg', zone: 'inside' },
       { position: 'Third Man', zone: 'outside' },
       { position: 'Fine Leg', zone: 'outside' }
@@ -1024,25 +1098,25 @@ function getFieldingTemplate(phaseKey) {
     middleOvers: [
       { position: 'Wicket-keeper', zone: 'inside' },
       { position: 'Point', zone: 'inside' },
-      { position: 'Cover', zone: 'inside' },
+      { position: 'Cover Point', zone: 'inside' },
       { position: 'Extra Cover', zone: 'inside' },
-      { position: 'Mid-off', zone: 'inside' },
-      { position: 'Mid-on', zone: 'inside' },
+      { position: 'Mid Off', zone: 'inside' },
+      { position: 'Mid On', zone: 'inside' },
       { position: 'Square Leg', zone: 'inside' },
-      { position: 'Long-off', zone: 'outside' },
-      { position: 'Long-on', zone: 'outside' },
-      { position: 'Deep Mid-wicket', zone: 'outside' }
+      { position: 'Long Off', zone: 'outside' },
+      { position: 'Long On', zone: 'outside' },
+      { position: 'Deep Mid Wicket', zone: 'outside' }
     ],
     deathOvers: [
       { position: 'Wicket-keeper', zone: 'inside' },
       { position: 'Point', zone: 'inside' },
       { position: 'Cover', zone: 'inside' },
-      { position: 'Mid-off', zone: 'inside' },
-      { position: 'Mid-on', zone: 'inside' },
-      { position: 'Long-off', zone: 'outside' },
-      { position: 'Long-on', zone: 'outside' },
-      { position: 'Deep Cover', zone: 'outside' },
-      { position: 'Deep Mid-wicket', zone: 'outside' },
+      { position: 'Mid Off', zone: 'inside' },
+      { position: 'Mid On', zone: 'inside' },
+      { position: 'Long Off', zone: 'outside' },
+      { position: 'Long On', zone: 'outside' },
+      { position: 'Deep Extra Cover', zone: 'outside' },
+      { position: 'Deep Mid Wicket', zone: 'outside' },
       { position: 'Third Man', zone: 'outside' }
     ]
   };
@@ -1067,7 +1141,6 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
     coachTip: json?.coachTip || 'Use player notes to match roles to phases and keep plans simple.'
   };
 
-  // Batting order: enforce exact squad names, uniqueness, and full length
   const usedBatNames = new Set();
   const rawBat = Array.isArray(json?.battingOrder) ? [...json.battingOrder] : [];
   rawBat.sort((a, b) => (parseInt(a?.position) || 999) - (parseInt(b?.position) || 999));
@@ -1080,14 +1153,9 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
       chosen = next ? next.name : aiPlayers[(pos - 1) % aiPlayers.length].name;
     }
     usedBatNames.add(chosen);
-    out.battingOrder.push({
-      name: chosen,
-      position: pos,
-      reason: row?.reason || 'Placed based on role and available player notes.'
-    });
+    out.battingOrder.push({ name: chosen, position: pos, reason: row?.reason || 'Placed based on role and available player notes.' });
   }
 
-  // Bowling rotation: keep valid unique names, then fill using bowlers/all-rounders
   const preferred = aiPlayers.filter(p => p.role === 'Bowler' || p.role === 'All-rounder');
   const fallbackPool = preferred.length ? preferred : aiPlayers;
   const usedBowl = new Set();
@@ -1097,31 +1165,18 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
     const name = toValidSquadName(b?.name, validMap);
     if (!name || usedBowl.has(name)) return;
     usedBowl.add(name);
-    out.bowlingRotation.push({
-      name,
-      overs: Math.max(1, Math.min(maxBowlerOvers, parseInt(b?.overs) || (isShortFormat ? 4 : 5))),
-      reason: b?.reason || 'Selected for bowling responsibility.'
-    });
+    out.bowlingRotation.push({ name, overs: Math.max(1, Math.min(maxBowlerOvers, parseInt(b?.overs) || (isShortFormat ? 4 : 5))), reason: b?.reason || 'Selected for bowling responsibility.' });
   });
 
   while (out.bowlingRotation.length < Math.min(5, fallbackPool.length)) {
     const next = fallbackPool.find(p => !usedBowl.has(p.name));
     if (!next) break;
     usedBowl.add(next.name);
-    out.bowlingRotation.push({
-      name: next.name,
-      overs: isShortFormat ? 4 : 5,
-      reason: 'Added from squad role balance.'
-    });
+    out.bowlingRotation.push({ name: next.name, overs: isShortFormat ? 4 : 5, reason: 'Added from squad role balance.' });
   }
 
-  // Fielding phases: enforce only valid names and outside limits
   const phaseKeys = ['powerplay', 'middleOvers', 'deathOvers'];
-  const phaseDefaults = {
-    powerplay: { overs: '1-6', maxOutside: 2 },
-    middleOvers: { overs: '7-15', maxOutside: 4 },
-    deathOvers: { overs: '16-20', maxOutside: 5 }
-  };
+  const phaseDefaults = { powerplay: { overs: '1-6', maxOutside: 2 }, middleOvers: { overs: '7-15', maxOutside: 4 }, deathOvers: { overs: '16-20', maxOutside: 5 } };
 
   phaseKeys.forEach(key => {
     const src = json?.fieldingPhases?.[key] || {};
@@ -1139,12 +1194,7 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
       used.add(name);
       const tpl = template[fielders.length % template.length];
       const position = (f?.position && String(f.position).trim()) ? String(f.position).trim() : tpl.position;
-      fielders.push({
-        name,
-        position,
-        zone: f?.zone === 'outside' ? 'outside' : (tpl.zone || 'inside'),
-        reason: f?.reason || 'Role-based placement.'
-      });
+      fielders.push({ name, position, zone: f?.zone === 'outside' ? 'outside' : (tpl.zone || 'inside'), reason: f?.reason || 'Role-based placement.' });
     });
 
     while (fielders.length < targetCount) {
@@ -1152,28 +1202,15 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
       if (!next) break;
       used.add(next.name);
       const tpl = template[fielders.length % template.length];
-      fielders.push({
-        name: next.name,
-        position: tpl.position,
-        zone: tpl.zone,
-        reason: `Auto-filled from squad for ${tpl.position}.`
-      });
+      fielders.push({ name: next.name, position: tpl.position, zone: tpl.zone, reason: `Auto-filled from squad for ${tpl.position}.` });
     }
 
     let outsideSeen = 0;
     fielders.forEach(f => {
-      if (f.zone === 'outside') {
-        outsideSeen++;
-        if (outsideSeen > maxOutside) f.zone = 'inside';
-      }
+      if (f.zone === 'outside') { outsideSeen++; if (outsideSeen > maxOutside) f.zone = 'inside'; }
     });
 
-    out.fieldingPhases[key] = {
-      overs: src.overs || phaseDefaults[key].overs,
-      maxOutside,
-      note: src.note || out.fieldingPhases[key].note,
-      fielders
-    };
+    out.fieldingPhases[key] = { overs: src.overs || phaseDefaults[key].overs, maxOutside, note: src.note || out.fieldingPhases[key].note, fielders };
   });
 
   return out;
@@ -1181,36 +1218,21 @@ function sanitizeAIResponse(json, aiPlayers, matchType) {
 
 async function getAISquadForAI() {
   try {
-    const res = await fetch(JSONBIN_URL + '/latest', {
-      headers: { 'X-Master-Key': JSONBIN_KEY }
-    });
+    const res = await fetch(JSONBIN_URL + '/latest', { headers: { 'X-Master-Key': JSONBIN_KEY } });
     if (!res.ok) throw new Error('Cloud squad fetch failed');
     const data = await res.json();
     const cloudPlayers = data?.record?.players;
     if (Array.isArray(cloudPlayers) && cloudPlayers.length) {
-      return cloudPlayers.map((p, idx) => ({
-        id: p.id ?? idx + 1,
-        name: String(p.name || '').trim(),
-        role: p.role || 'Batsman',
-        note: p.note || ''
-      })).filter(p => p.name);
+      return cloudPlayers.map((p, idx) => ({ id: p.id ?? idx + 1, name: String(p.name || '').trim(), role: p.role || 'Batsman', note: p.note || '' })).filter(p => p.name);
     }
-  } catch (e) {
-    // Fallback to local roster when cloud is unavailable
-  }
-  return players.map(p => ({
-    id: p.id,
-    name: p.name,
-    role: p.role,
-    note: p.note || ''
-  }));
+  } catch (e) {}
+  return players.map(p => ({ id: p.id, name: p.name, role: p.role, note: p.note || '' }));
 }
 
 async function askGroq() {
   const aiPlayers = await getAISquadForAI();
   if (!aiPlayers.length) { alert('Add players to your roster first!'); return; }
 
-  // Build player list - VERY explicit so AI cannot substitute names
   const localCaptainName = captainId ? playerById(captainId)?.name : null;
   const localVCName = vcId ? playerById(vcId)?.name : null;
   const playerNames = aiPlayers.map(p => p.name);
@@ -1221,122 +1243,59 @@ async function askGroq() {
     return (i+1) + '. NAME: ' + p.name + ' | ROLE: ' + p.role + isCap + isVC + note;
   }).join('\n');
 
-  const squadSource = aiPlayers.length === players.length && aiPlayers.every((p, i) => players[i] && players[i].name === p.name)
-    ? 'local-loaded (synced from JSONBin)'
-    : 'JSONBin latest record';
   const playerCount = aiPlayers.length;
-
   const matchType = document.getElementById('matchType').value;
   const context   = document.getElementById('aiContext').value.trim();
   const matchMeta = (document.getElementById('teamName').value||'My Team') + ' vs ' + (document.getElementById('opponent').value||'Opponent') + ' | ' + matchType;
-
   const isT20 = matchType === 'T20' || matchType === 'T10';
 
-  const prompt = `You are an expert cricket coach AI. You must strictly follow these rules:
+  // Updated position names in prompt to match reference map
+  const prompt = `You are an expert cricket coach AI. You must strictly follow these rules.
 
-=== CRICKET VICTORIA JUNIOR FORMATS — STAGE 3 MATCH RULES (Cricket Blast Year 7 & 8, 8-over format) ===
-BATTING:
-- Eight batters in pairs (1-4). Each pair bats for TWO overs together regardless of dismissals.
-- On dismissal: batters swap ends + bowling team gets 5 BONUS runs. Not out means no penalty.
-- Dismissals: bowled, caught, run out, stumped, hit wicket, LBW (only if no shot offered and ball hitting stumps).
+Match: ${matchMeta}
+${context ? 'Context: ' + context : ''}
+Match Type: ${matchType}
 
-BOWLING:
-- Eight players must bowl one over each (also wicket-keep for a partner's over).
-- Bowlers limited to 8-metre run-up.
-- All overs bowled from SAME end. Batters swap ends after each over.
-- Max 6 deliveries per over. No-balls NOT re-bowled (except final over — must have 6 legitimate balls).
-- First 3 balls of each over must be bowled overarm. Second 3 balls can be underarm (bounce once max).
+=== YOUR SQUAD (USE ONLY THESE EXACT NAMES) ===
+${playerSummary}
 
-NO BALLS:
-- Ball bouncing above shoulder height (batter in normal stance) = no ball.
-- Full toss above waist height = no ball.
-- Ball passing outside 120cm cones (parallel to stumps from middle stump) = no ball.
-- 2 runs awarded for every no ball. Next ball is a FREE HIT (only run-out dismissal allowed).
+VALID PLAYER NAMES LIST: ${playerNames.join(', ')}
 
-FIELDING RULES (MANDATORY — you must follow exactly):
-- At moment of delivery: NO fielder may be within 10 metres of the bat (except wicket-keeper or slip fielders).
-- MAX 3 fielders in the Double Zone (behind stumps at bowler's end) at time of delivery.
-- Fielders can be interchanged at end of each batting pair.
+⚠️ CRITICAL: Use ONLY the exact player names listed above. NEVER invent names.
 
-SCORING:
-- Runs scored into the DOUBLE ZONE are doubled.
-- Ball along ground to boundary in double zone = 8 runs.
-- Ball over boundary on full in double zone = 12 runs.
-- Every wicket = bowling team gets 5 bonus runs.
-- No ball = 2 runs + whatever is scored. Free hit next ball.
-
-T20 FORMAT FIELDING RESTRICTIONS (if playing T20 rather than 8-over blast):
-- POWERPLAY (overs 1-6): MAX 2 fielders outside the 30-yard circle. At least 2 fielders in catching positions. WK and bowler not counted in the circle limit.
-- MIDDLE OVERS (7-15): MAX 4 fielders outside the 30-yard circle.
-- DEATH OVERS (16-20): MAX 5 fielders outside the 30-yard circle.
-- At ALL times: max 5 fielders on leg side. Max 2 fielders behind square on leg side.
-- No fielder within 10 metres of the batter (except WK, slips, gully).
-
-Match: \${matchMeta}
-\${context ? 'Context: ' + context : ''}
-Match Type: \${matchType}
-Squad Source: \${squadSource}
-
-=== YOUR SQUAD (USE ONLY THESE EXACT NAMES — DO NOT INVENT NEW NAMES) ===
-\${playerSummary}
-
-VALID PLAYER NAMES LIST: \${playerNames.join(', ')}
-
-⚠️ CRITICAL RULES:
-- You MUST use ONLY the exact player names listed above. NEVER use placeholder names like Alex, Ben, Charlie, David, Ethan, Frank, or any other made-up names.
-- Every "name" field in your JSON response must exactly match one of the names in the VALID PLAYER NAMES LIST above.
-- If you use any name not in that list, your response is WRONG.
-- Use each player's notes to inform your decisions.
+VALID FIELDING POSITIONS (use ONLY these names from the reference diagram):
+Inner ring: Wicket-keeper, First Slip, Second Slip, Third Slip, Leg Slip, Leg Gully, Gully, Point, Cover Point, Cover, Extra Cover, Mid Off, Mid On, Mid Wicket, InField, Square Leg, Silly Mid On, Silly Mid Off
+Boundary/Outfield: Third Man, Deep Fine Leg, Fine Leg, Deep Point, OutField, Deep Extra Cover, Long Off, Long On, Deep Mid Wicket, Deep Square, Deep Square Leg
 
 INSTRUCTIONS:
-1. BATTING ORDER: List ALL \${playerCount} players using their EXACT names from the squad above. Give a reason based on their role and notes.
-2. BOWLING ROTATION: Use EXACT player names. In T20: max 4 overs per bowler. Choose bowlers based on role (Bowler/All-rounder preferred).
-3. FIELDING PLAN: Use EXACT player names for all 3 phases (Powerplay, Middle, Death). Each phase lists 10 fielders (excluding the current bowler). Mark each "inside" or "outside" the 30-yard circle. ENFORCE:
-   - Powerplay: ONLY 2 outside — no exceptions.
+1. BATTING ORDER: List ALL ${playerCount} players using their EXACT names.
+2. BOWLING ROTATION: Use EXACT player names. In T20: max 4 overs per bowler.
+3. FIELDING PLAN: Use EXACT player names AND ONLY the valid position names listed above for all 3 phases.
+   - Powerplay: ONLY 2 outside circle max.
    - Middle: max 4 outside.
    - Death: max 5 outside.
-   - No fielder within 10m of bat (except WK, slips, gully).
 
 Respond ONLY with raw JSON (no markdown, no code fences):
 {
-  "battingOrder": [
-    {"name": "Player Name", "position": 1, "reason": "brief reason"},
-    {"name": "Player Name", "position": 2, "reason": "brief reason"}
-  ],
-  "bowlingRotation": [
-    {"name": "Player Name", "overs": 1, "reason": "brief reason"}
-  ],
+  "battingOrder": [{"name": "Player Name", "position": 1, "reason": "brief reason"}],
+  "bowlingRotation": [{"name": "Player Name", "overs": 1, "reason": "brief reason"}],
   "fieldingPhases": {
     "powerplay": {
-      "overs": "1-6",
-      "maxOutside": 2,
-      "note": "Attacking field, 2 slips, ring fielders attacking",
-      "fielders": [
-        {"name": "Player Name", "position": "First Slip", "zone": "inside", "reason": "brief"},
-        {"name": "Player Name", "position": "Fine Leg", "zone": "outside", "reason": "brief"}
-      ]
+      "overs": "1-6", "maxOutside": 2, "note": "tactical note",
+      "fielders": [{"name": "Player Name", "position": "Cover Point", "zone": "inside", "reason": "brief"}]
     },
     "middleOvers": {
-      "overs": "7-15",
-      "maxOutside": 4,
-      "note": "Contain runs, cut off boundaries",
-      "fielders": [
-        {"name": "Player Name", "position": "Cover", "zone": "inside", "reason": "brief"}
-      ]
+      "overs": "7-15", "maxOutside": 4, "note": "tactical note",
+      "fielders": [{"name": "Player Name", "position": "Mid Wicket", "zone": "inside", "reason": "brief"}]
     },
     "deathOvers": {
-      "overs": "16-20",
-      "maxOutside": 5,
-      "note": "Protect boundaries, yorker length",
-      "fielders": [
-        {"name": "Player Name", "position": "Long-on", "zone": "outside", "reason": "brief"}
-      ]
+      "overs": "16-20", "maxOutside": 5, "note": "tactical note",
+      "fielders": [{"name": "Player Name", "position": "Long On", "zone": "outside", "reason": "brief"}]
     }
   },
   "coachTip": "One overall tactical tip for this match"
 }`;
 
-    // Show loading
   document.getElementById('aiLoading').style.display = 'block';
   document.getElementById('aiResult').style.display = 'none';
   const bar = document.getElementById('aiLoadBar');
@@ -1346,36 +1305,20 @@ Respond ONLY with raw JSON (no markdown, no code fences):
   try {
     const res = await fetch(GROQ_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${GROQ_API_KEY}`
-      },
-      body: JSON.stringify({
-        model: GROQ_MODEL,
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.6,
-        max_tokens: 4000
-      })
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${GROQ_API_KEY}` },
+      body: JSON.stringify({ model: GROQ_MODEL, messages: [{ role: 'user', content: prompt }], temperature: 0.6, max_tokens: 4000 })
     });
 
     const data = await res.json();
     bar.style.width = '100%';
-
     if (!res.ok) throw new Error(data.error?.message || 'Groq API error');
 
     const raw = data.choices[0].message.content.trim();
     const json = safeParseJSON(raw);
-
-    // Validate + force AI output to squad names only
-    const validNames = aiPlayers.map(p => p.name.toLowerCase());
     const validMap = new Map(aiPlayers.map(p => [p.name.toLowerCase(), p.name]));
     const invalidBefore = countInvalidAINameEntries(json, validMap);
     const cleaned = sanitizeAIResponse(json, aiPlayers, matchType);
-    if (invalidBefore > 0) {
-      cleaned.coachTip = `Auto-corrected ${invalidBefore} non-squad name entr${invalidBefore===1?'y':'ies'} to your JSONBin squad. ` + (cleaned.coachTip || '');
-      console.warn('AI returned non-squad names. Output auto-corrected to JSONBin squad names.');
-    }
-
+    if (invalidBefore > 0) cleaned.coachTip = `Auto-corrected ${invalidBefore} non-squad name entr${invalidBefore===1?'y':'ies'} to your squad. ` + (cleaned.coachTip || '');
     lastAIJson = cleaned;
 
     setTimeout(()=>{
@@ -1406,32 +1349,29 @@ function renderFieldPhase(phase, data, phaseColor) {
       </span>
     </div>`;
 
-  // Phase tactical note
   if (data.note) {
     html += `<div style="background:${phaseColor}10;border-left:2px solid ${phaseColor};padding:4px 8px;font-size:10px;color:var(--muted);font-style:italic">${data.note}</div>`;
   }
 
   html += `<div class="ai-section-body" style="padding:6px 8px">`;
 
-  // Rules reminder strip for powerplay
   if (phase === 'powerplay') {
     html += `<div style="background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.2);border-radius:3px;padding:4px 7px;font-size:9px;color:#f59e0b;margin-bottom:6px;line-height:1.5">
-      ⚡ <strong>Powerplay rules:</strong> MAX 2 outside circle · Min 2 catching positions · No fielder within 10m of bat (except WK/slips/gully) · Max 3 in Double Zone
+      ⚡ <strong>Powerplay:</strong> MAX 2 outside circle · Min 2 catching positions · No fielder within 10m of bat
     </div>`;
   }
   if (phase === 'deathOvers') {
     html += `<div style="background:rgba(224,48,48,.07);border:1px solid rgba(224,48,48,.2);border-radius:3px;padding:4px 7px;font-size:9px;color:#e03030;margin-bottom:6px;line-height:1.5">
-      💀 <strong>Death rules:</strong> MAX 5 outside circle · Protect boundaries · Consider Double Zone coverage
+      💀 <strong>Death:</strong> MAX 5 outside circle · Protect boundaries
     </div>`;
   }
 
-  // Split inside/outside
   const inside = data.fielders.filter(f => f.zone !== 'outside');
   const outside = data.fielders.filter(f => f.zone === 'outside');
 
   if (inside.length) {
     html += `<div style="font-size:9px;color:#10b981;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;font-family:Oswald,sans-serif;display:flex;align-items:center;gap:4px">
-      <span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block"></span> Inside 30-yard circle (${inside.length})
+      <span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block"></span> Inside circle (${inside.length})
     </div>`;
     inside.forEach(f => {
       const p = players.find(pl => pl.name === f.name);
@@ -1447,7 +1387,7 @@ function renderFieldPhase(phase, data, phaseColor) {
 
   if (outside.length) {
     html += `<div style="font-size:9px;color:#f59e0b;text-transform:uppercase;letter-spacing:.5px;margin:6px 0 3px;font-family:Oswald,sans-serif;border-top:1px solid var(--border);padding-top:5px;display:flex;align-items:center;gap:4px">
-      <span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block"></span> Outside circle — boundary (${outside.length}/${data.maxOutside} max)
+      <span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block"></span> Boundary (${outside.length}/${data.maxOutside} max)
       ${limitBreached ? '<span style="color:#e03030;font-weight:700;margin-left:4px">⚠️ EXCEEDS LIMIT</span>' : ''}
     </div>`;
     outside.forEach(f => {
@@ -1473,7 +1413,6 @@ function renderAIResult(json) {
 
   let html = '';
 
-  // Batting Order
   if (json.battingOrder) {
     html += `<div class="ai-section">
       <div class="ai-section-title">🏏 Recommended Batting Order</div>
@@ -1491,7 +1430,6 @@ function renderAIResult(json) {
     html += `</div></div>`;
   }
 
-  // Bowling
   if (json.bowlingRotation) {
     html += `<div class="ai-section">
       <div class="ai-section-title">🎳 Bowling Rotation</div>
@@ -1509,36 +1447,15 @@ function renderAIResult(json) {
     html += `</div></div>`;
   }
 
-  // Fielding Phases
   if (json.fieldingPhases) {
     html += `<div style="font-family:Oswald,sans-serif;font-size:10px;letter-spacing:1px;color:#a78bfa;text-transform:uppercase;padding:6px 0 4px;border-bottom:1px solid var(--border);margin-bottom:6px">
-      🏟️ Fielding Plan — T20 Phase Restrictions
-    </div>`;
-    html += `<div style="font-size:9px;color:var(--muted);margin-bottom:7px;line-height:1.6;background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.15);border-radius:4px;padding:6px 8px">
-      <strong style="color:#a78bfa;font-family:Oswald,sans-serif;letter-spacing:.5px">CRICKET VICTORIA JUNIOR STAGE 3 RULES APPLIED</strong><br>
-      🟢 No fielder within 10m of bat (except WK/slips/gully) &nbsp;|&nbsp; Max 3 in Double Zone<br>
-      ⚡ Powerplay: <strong>max 2 outside circle</strong> &nbsp;|&nbsp; 🔄 Middle: max 4 &nbsp;|&nbsp; 💀 Death: max 5<br>
-      Max 5 on leg side &nbsp;|&nbsp; Max 2 behind square leg &nbsp;|&nbsp; Double Zone runs are doubled
+      🏟️ Fielding Plan — Phase Restrictions
     </div>`;
     html += renderFieldPhase('powerplay', json.fieldingPhases.powerplay, '#f59e0b');
     html += renderFieldPhase('middleOvers', json.fieldingPhases.middleOvers, '#10b981');
     html += renderFieldPhase('deathOvers', json.fieldingPhases.deathOvers, '#e03030');
-  } else if (json.fieldPlacements) {
-    // fallback for old format
-    html += `<div class="ai-section"><div class="ai-section-title">🟢 Field Placements</div><div class="ai-section-body">`;
-    json.fieldPlacements.forEach(f => {
-      const p = players.find(pl=>pl.name===f.name);
-      const color = p ? roleColor(p.role) : '#10b981';
-      html += `<div class="ai-player-row">
-        <span style="width:8px;height:8px;border-radius:50%;background:${color};flex-shrink:0;display:inline-block"></span>
-        <span style="font-weight:600;flex:1">${f.name}</span>
-        <span class="ai-pos-tag">${f.position}</span>
-      </div>`;
-    });
-    html += `</div></div>`;
   }
 
-  // Coach tip
   if (json.coachTip) {
     html += `<div style="background:rgba(240,165,0,.08);border:1px solid rgba(240,165,0,.2);border-radius:5px;padding:8px 10px;margin-top:6px;font-size:11px;color:var(--accent)">
       💡 <strong>Coach Tip:</strong> ${json.coachTip}
@@ -1552,20 +1469,16 @@ function applyAISuggestions() {
   if (!lastAIJson) return;
   let applied = [];
 
-  // Apply batting order
   if (lastAIJson.battingOrder) {
     const newOrder = new Array(11).fill(null);
     lastAIJson.battingOrder.forEach(b => {
       const p = players.find(pl => pl.name === b.name);
-      if (p && b.position >= 1 && b.position <= 11) {
-        newOrder[b.position - 1] = p.id;
-      }
+      if (p && b.position >= 1 && b.position <= 11) newOrder[b.position - 1] = p.id;
     });
     battingOrder = newOrder;
     applied.push('batting order');
   }
 
-  // Apply bowling rotation
   if (lastAIJson.bowlingRotation) {
     bowlingSlots = lastAIJson.bowlingRotation.map(b => {
       const p = players.find(pl => pl.name === b.name);
